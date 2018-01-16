@@ -6,7 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/Users/hyeryeongsong/Algorithms_sccc/Winter_Vacation/Queue.cpp
+/Users/hyeryeongsong/Algorithms_sccc/Winter_Vacation/Q.cpp
 iostream
+-
+queue
 -
 

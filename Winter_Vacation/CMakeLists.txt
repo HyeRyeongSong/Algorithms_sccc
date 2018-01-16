@@ -3,5 +3,5 @@ project(Winter_Vacation)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES Queue.cpp)
+set(SOURCE_FILES Q.cpp)
 add_executable(Winter_Vacation ${SOURCE_FILES})

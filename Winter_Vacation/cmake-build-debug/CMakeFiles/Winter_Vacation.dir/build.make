@@ -57,38 +57,38 @@ include CMakeFiles/Winter_Vacation.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Winter_Vacation.dir/flags.make
 
-CMakeFiles/Winter_Vacation.dir/Queue.cpp.o: CMakeFiles/Winter_Vacation.dir/flags.make
-CMakeFiles/Winter_Vacation.dir/Queue.cpp.o: ../Queue.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hyeryeongsong/Algorithms_sccc/Winter_Vacation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Winter_Vacation.dir/Queue.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Winter_Vacation.dir/Queue.cpp.o -c /Users/hyeryeongsong/Algorithms_sccc/Winter_Vacation/Queue.cpp
+CMakeFiles/Winter_Vacation.dir/Q.cpp.o: CMakeFiles/Winter_Vacation.dir/flags.make
+CMakeFiles/Winter_Vacation.dir/Q.cpp.o: ../Q.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hyeryeongsong/Algorithms_sccc/Winter_Vacation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Winter_Vacation.dir/Q.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Winter_Vacation.dir/Q.cpp.o -c /Users/hyeryeongsong/Algorithms_sccc/Winter_Vacation/Q.cpp
 
-CMakeFiles/Winter_Vacation.dir/Queue.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Winter_Vacation.dir/Queue.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hyeryeongsong/Algorithms_sccc/Winter_Vacation/Queue.cpp > CMakeFiles/Winter_Vacation.dir/Queue.cpp.i
+CMakeFiles/Winter_Vacation.dir/Q.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Winter_Vacation.dir/Q.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hyeryeongsong/Algorithms_sccc/Winter_Vacation/Q.cpp > CMakeFiles/Winter_Vacation.dir/Q.cpp.i
 
-CMakeFiles/Winter_Vacation.dir/Queue.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Winter_Vacation.dir/Queue.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hyeryeongsong/Algorithms_sccc/Winter_Vacation/Queue.cpp -o CMakeFiles/Winter_Vacation.dir/Queue.cpp.s
+CMakeFiles/Winter_Vacation.dir/Q.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Winter_Vacation.dir/Q.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hyeryeongsong/Algorithms_sccc/Winter_Vacation/Q.cpp -o CMakeFiles/Winter_Vacation.dir/Q.cpp.s
 
-CMakeFiles/Winter_Vacation.dir/Queue.cpp.o.requires:
+CMakeFiles/Winter_Vacation.dir/Q.cpp.o.requires:
 
-.PHONY : CMakeFiles/Winter_Vacation.dir/Queue.cpp.o.requires
+.PHONY : CMakeFiles/Winter_Vacation.dir/Q.cpp.o.requires
 
-CMakeFiles/Winter_Vacation.dir/Queue.cpp.o.provides: CMakeFiles/Winter_Vacation.dir/Queue.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Winter_Vacation.dir/build.make CMakeFiles/Winter_Vacation.dir/Queue.cpp.o.provides.build
-.PHONY : CMakeFiles/Winter_Vacation.dir/Queue.cpp.o.provides
+CMakeFiles/Winter_Vacation.dir/Q.cpp.o.provides: CMakeFiles/Winter_Vacation.dir/Q.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Winter_Vacation.dir/build.make CMakeFiles/Winter_Vacation.dir/Q.cpp.o.provides.build
+.PHONY : CMakeFiles/Winter_Vacation.dir/Q.cpp.o.provides
 
-CMakeFiles/Winter_Vacation.dir/Queue.cpp.o.provides.build: CMakeFiles/Winter_Vacation.dir/Queue.cpp.o
+CMakeFiles/Winter_Vacation.dir/Q.cpp.o.provides.build: CMakeFiles/Winter_Vacation.dir/Q.cpp.o
 
 
 # Object files for target Winter_Vacation
 Winter_Vacation_OBJECTS = \
-"CMakeFiles/Winter_Vacation.dir/Queue.cpp.o"
+"CMakeFiles/Winter_Vacation.dir/Q.cpp.o"
 
 # External object files for target Winter_Vacation
 Winter_Vacation_EXTERNAL_OBJECTS =
 
-Winter_Vacation: CMakeFiles/Winter_Vacation.dir/Queue.cpp.o
+Winter_Vacation: CMakeFiles/Winter_Vacation.dir/Q.cpp.o
 Winter_Vacation: CMakeFiles/Winter_Vacation.dir/build.make
 Winter_Vacation: CMakeFiles/Winter_Vacation.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/hyeryeongsong/Algorithms_sccc/Winter_Vacation/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Winter_Vacation"
@@ -99,7 +99,7 @@ CMakeFiles/Winter_Vacation.dir/build: Winter_Vacation
 
 .PHONY : CMakeFiles/Winter_Vacation.dir/build
 
-CMakeFiles/Winter_Vacation.dir/requires: CMakeFiles/Winter_Vacation.dir/Queue.cpp.o.requires
+CMakeFiles/Winter_Vacation.dir/requires: CMakeFiles/Winter_Vacation.dir/Q.cpp.o.requires
 
 .PHONY : CMakeFiles/Winter_Vacation.dir/requires
 

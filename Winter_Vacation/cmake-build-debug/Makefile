@@ -123,32 +123,32 @@ Winter_Vacation/fast:
 	$(MAKE) -f CMakeFiles/Winter_Vacation.dir/build.make CMakeFiles/Winter_Vacation.dir/build
 .PHONY : Winter_Vacation/fast
 
-Queue.o: Queue.cpp.o
+Q.o: Q.cpp.o
 
-.PHONY : Queue.o
+.PHONY : Q.o
 
 # target to build an object file
-Queue.cpp.o:
-	$(MAKE) -f CMakeFiles/Winter_Vacation.dir/build.make CMakeFiles/Winter_Vacation.dir/Queue.cpp.o
-.PHONY : Queue.cpp.o
+Q.cpp.o:
+	$(MAKE) -f CMakeFiles/Winter_Vacation.dir/build.make CMakeFiles/Winter_Vacation.dir/Q.cpp.o
+.PHONY : Q.cpp.o
 
-Queue.i: Queue.cpp.i
+Q.i: Q.cpp.i
 
-.PHONY : Queue.i
+.PHONY : Q.i
 
 # target to preprocess a source file
-Queue.cpp.i:
-	$(MAKE) -f CMakeFiles/Winter_Vacation.dir/build.make CMakeFiles/Winter_Vacation.dir/Queue.cpp.i
-.PHONY : Queue.cpp.i
+Q.cpp.i:
+	$(MAKE) -f CMakeFiles/Winter_Vacation.dir/build.make CMakeFiles/Winter_Vacation.dir/Q.cpp.i
+.PHONY : Q.cpp.i
 
-Queue.s: Queue.cpp.s
+Q.s: Q.cpp.s
 
-.PHONY : Queue.s
+.PHONY : Q.s
 
 # target to generate assembly for a file
-Queue.cpp.s:
-	$(MAKE) -f CMakeFiles/Winter_Vacation.dir/build.make CMakeFiles/Winter_Vacation.dir/Queue.cpp.s
-.PHONY : Queue.cpp.s
+Q.cpp.s:
+	$(MAKE) -f CMakeFiles/Winter_Vacation.dir/build.make CMakeFiles/Winter_Vacation.dir/Q.cpp.s
+.PHONY : Q.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Winter_Vacation"
-	@echo "... Queue.o"
-	@echo "... Queue.i"
-	@echo "... Queue.s"
+	@echo "... Q.o"
+	@echo "... Q.i"
+	@echo "... Q.s"
 .PHONY : help
 
 
