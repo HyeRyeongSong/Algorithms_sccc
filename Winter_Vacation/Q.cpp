@@ -1,65 +1,58 @@
 #include <iostream>
 #include <queue>
 #include <algorithm>
+#include <cmath>
 
 using namespace std;
 
-struct Person
-{
-    int iSum = 0;
-    int iSeq = 0;
+int iCount = 0;
+int r, c;
 
-    bool operator> (const Person& ref) const {
-        if(iSum == ref.iSum)
-            return iSeq < ref.iSeq;
-        return iSum < ref.iSum;
-    }
-};
+void Compress(int iSx, int iSy, int iLength);
 
-int main()
-{
-    cin.sync_with_stdio(false); cin.tie(NULL);
+int main() {
 
     int N;
+    int iSum = 1;
+
+    int X[4] = {0,0,1,1};
+    int Y[4] = {0,1,0,1};
+
     cin >> N;
 
-    Person person;
-
-    int iSeq = 0;
-
-    priority_queue<Person, vector<Person>, greater<Person>> priorityQueue;
-
-    int iNum[5];
-    int iSum[10];
-
     for(int i=0; i<N; ++i)
-    {
-        for(int i=0; i<5; ++i) {
-            cin >> iNum[i];
-        }
+        iSum*=2;
 
-        int max_val = 0;
+    cin >> r >> c;
 
-        for (int fir = 0; fir < 5; fir ++)
-            for (int sec = fir+1; sec < 5; sec ++)
-                for (int thr = sec+1; thr < 5; thr ++)
-                    max_val = max(max_val, (iNum[fir] + iNum[sec] + iNum[thr])%10);
 
-        int iSumValue = *max_element(iSum, iSum+9);
-
-        ++iSeq;
-
-        person.iSeq = iSeq;
-        person.iSum = iSumValue;
-
-        priorityQueue.push(person);
-
-    }
-
-    cout << priorityQueue.top().iSeq;
+    Compress(0, 0, iSum);
 
     return 0;
 }
+
+void Compress(int iSx, int iSy, int iLength)
+{
+    if(iLength != 2)
+    {
+        iLength /=2;
+
+        Compress(iSx, iSy, iLength);
+        Compress(iSx, iSy+iLength, iLength);
+
+        Compress(iSx+iLength, iSy, iLength);
+        Compress(iSx+iLength, iSy+iLength, iLength);
+    }
+    for(int i=iSx; i<iSx+2; ++i)
+        for(int j=iSy; j<iSy+2; ++j)
+        {
+            if(i==r && j == c)
+                cout << iCount;
+            else
+                ++iCount;
+        }
+}
+
 
 //1<<1, (1<<1) + 1
 // >> 부모노드 접근, << 자식노드 접근
