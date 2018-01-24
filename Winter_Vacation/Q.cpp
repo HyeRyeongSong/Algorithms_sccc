@@ -1,59 +1,55 @@
 #include <iostream>
-#include <queue>
 #include <algorithm>
-#include <cmath>
+#include <queue>
+#include <set>
+#include <vector>
 
 using namespace std;
 
-int iCount = 0;
-int r, c;
+int gcd(long long a, long long b);
+long long lcm(int a, int b);
 
-void Compress(int iSx, int iSy, int iLength);
 
 int main() {
+    cin.sync_with_stdio(false);
+    cin.tie(NULL);
 
     int N;
-    int iSum = 1;
-
-    int X[4] = {0,0,1,1};
-    int Y[4] = {0,1,0,1};
 
     cin >> N;
 
-    for(int i=0; i<N; ++i)
-        iSum*=2;
+    int iNum;
+    char temp;
 
-    cin >> r >> c;
+    vector<int> vector1;
 
+    for(int i=0; i<N; ++i) {
 
-    Compress(0, 0, iSum);
+        do {
+            scanf("%d%c", &iNum, &temp);
+            vector1.push_back(iNum);
+        } while (temp != '\n');
 
-    return 0;
-}
+        
 
-void Compress(int iSx, int iSy, int iLength)
-{
-    if(iLength != 2)
-    {
-        iLength /=2;
-
-        Compress(iSx, iSy, iLength);
-        Compress(iSx, iSy+iLength, iLength);
-
-        Compress(iSx+iLength, iSy, iLength);
-        Compress(iSx+iLength, iSy+iLength, iLength);
     }
-    for(int i=iSx; i<iSx+2; ++i)
-        for(int j=iSy; j<iSy+2; ++j)
-        {
-            if(i==r && j == c)
-                cout << iCount;
-            else
-                ++iCount;
-        }
+    long long a, b;
+    cin >> a >> b;
+    cout << gcd(a, b) << '\n' << lcm(a, b);
 }
 
 
+int gcd(long long a, long long b) {
+    if(b==0)
+        return a;
+    else
+        return(b%a);
+}
+
+long long lcm(int a, int b)
+{
+    return (long long)a * b / gcd(a, b);
+}
 //1<<1, (1<<1) + 1
 // >> 부모노드 접근, << 자식노드 접근
 
