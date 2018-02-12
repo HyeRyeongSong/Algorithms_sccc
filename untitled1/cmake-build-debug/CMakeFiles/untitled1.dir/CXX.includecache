@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/hyeryeongsong/Algorithms_sccc/untitled1/main.cpp
+iostream
+-
+algorithm
+-
+queue
+-
+set
+-
+vector
+-
+

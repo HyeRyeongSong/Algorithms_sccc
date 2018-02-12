@@ -82,7 +82,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/hyeryeongsong/Algorithms_sccc/Winter_Vacation/Q.cpp">
+		<Unit filename="/Users/hyeryeongsong/Algorithms_sccc/Winter_Vacation/Kruskal.cpp">
 			<Option target="Winter_Vacation"/>
 		</Unit>
 		<Unit filename="/Users/hyeryeongsong/Algorithms_sccc/Winter_Vacation/CMakeLists.txt">
