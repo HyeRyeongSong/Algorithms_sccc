@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Winter_Vacation.dir/Kruskal.cpp.o"
+  "CMakeFiles/Winter_Vacation.dir/Q.cpp.o"
   "Winter_Vacation.pdb"
   "Winter_Vacation"
 )

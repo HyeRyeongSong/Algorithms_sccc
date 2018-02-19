@@ -6,15 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/Users/hyeryeongsong/Algorithms_sccc/Winter_Vacation/Kruskal.cpp
-cstdio
--
+/Users/hyeryeongsong/Algorithms_sccc/Winter_Vacation/Q.cpp
 iostream
+-
+stack
 -
 vector
 -
-algorithm
+queue
 -
-cmath
+cstring
+-
+algorithm
 -
 
